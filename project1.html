@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DecodeLabs | Frontend Engineering Foundation</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="project1.css" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <span class="header__logo-text">Decode<span class="header__logo-highlight">Labs</span></span>
+                <span class="header__badge">Engineering Foundations</span>
+            </div>
+            <nav class="header__nav" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#mission" class="header__nav-link">Mission</a></li>
+                    <li class="header__nav-item"><a href="#requirements" class="header__nav-link">Requirements</a></li>
+                    <li class="header__nav-item"><a href="#blueprint" class="header__nav-link">Blueprint</a></li>
+                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="mission">
+            <div class="hero__inner container">
+                <div class="hero__content">
+                    <span class="hero__tag">Batch 2026</span>
+                    <h1 class="hero__title">
+                        Frontend Development<br />
+                        <span class="hero__title-highlight">Project 1</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Industrial Training Kit &bull; Powered by DecodeLabs
+                    </p>
+                    <p class="hero__description">
+                        <strong>Static Webpage Design.</strong> Before you build dynamic, data-driven 
+                        applications, you must master the fundamental relationship between content and style. 
+                        This is your <strong>visual architecture</strong> audit.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#requirements" class="button button--primary">View Requirements</a>
+                        <a href="#blueprint" class="button button--secondary">See Blueprint</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__visual-card">
+                        <div class="hero__visual-icon">⚙️</div>
+                        <div class="hero__visual-text">IPO Model</div>
+                        <div class="hero__visual-sub">Input → Process → Output</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WELCOME / MANDATE -->
+        <section class="mandate" aria-label="Architect's Mandate">
+            <div class="mandate__inner container">
+                <blockquote class="mandate__quote">
+                    <p>
+                        “Build it well, for the frontend is the only part of the system 
+                        the world will ever see.”
+                    </p>
+                    <cite>— DecodeLabs Engineering Foundations</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- REQUIREMENTS CHECKLIST -->
+        <section class="requirements" id="requirements">
+            <div class="requirements__inner container">
+                <div class="section-header">
+                    <span class="section-header__tag">Quality Gate</span>
+                    <h2 class="section-header__title">Project 1 <span class="section-header__highlight">Requirements</span></h2>
+                    <p class="section-header__sub">
+                        Code does not ship until it passes the inspection.
+                    </p>
+                </div>
+
+                <div class="requirements__grid">
+                    <!-- Item 1 -->
+                    <div class="requirement-card">
+                        <div class="requirement-card__icon">🗺️</div>
+                        <h3 class="requirement-card__title">Information Architecture</h3>
+                        <p class="requirement-card__desc">Logical sitemap defined first.</p>
+                        <span class="requirement-card__badge">Required</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="requirement-card">
+                        <div class="requirement-card__icon">🏷️</div>
+                        <h3 class="requirement-card__title">Semantic HTML</h3>
+                        <p class="requirement-card__desc">
+                            <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>.<br />
+                            One <code>&lt;h1&gt;</code> only.
+                        </p>
+                        <span class="requirement-card__badge">Required</span>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="requirement-card">
+                        <div class="requirement-card__icon">🎨</div>
+                        <h3 class="requirement-card__title">External CSS</h3>
+                        <p class="requirement-card__desc">No inline styles. DRY principle.<br />No IDs for styling.</p>
+                        <span class="requirement-card__badge">Required</span>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="requirement-card">
+                        <div class="requirement-card__icon">📐</div>
+                        <h3 class="requirement-card__title">Layout Systems</h3>
+                        <p class="requirement-card__desc">
+                            <strong>Grid</strong> for page structure.<br />
+                            <strong>Flexbox</strong> for component alignment.
+                        </p>
+                        <span class="requirement-card__badge">Required</span>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="requirement-card">
+                        <div class="requirement-card__icon">🖼️</div>
+                        <h3 class="requirement-card__title">Asset Optimization</h3>
+                        <p class="requirement-card__desc">
+                            AVIF / WebP formats.<br />
+                            Explicit <code>width</code> &amp; <code>height</code> to prevent CLS.
+                        </p>
+                        <span class="requirement-card__badge">Required</span>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="requirement-card">
+                        <div class="requirement-card__icon">✅</div>
+                        <h3 class="requirement-card__title">Validation</h3>
+                        <p class="requirement-card__desc">
+                            Pass <strong>W3C Validator</strong>.<br />
+                            Pass <strong>Lighthouse Audit</strong>.
+                        </p>
+                        <span class="requirement-card__badge">Required</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLUEPRINT / BEM + DRY DEMO -->
+        <section class="blueprint" id="blueprint">
+            <div class="blueprint__inner container">
+                <div class="section-header section-header--light">
+                    <span class="section-header__tag">Engineering Logic</span>
+                    <h2 class="section-header__title">The <span class="section-header__highlight">Blueprint</span></h2>
+                    <p class="section-header__sub">
+                        DRY Principle &bull; BEM Methodology &bull; Separation of Concerns
+                    </p>
+                </div>
+
+                <div class="blueprint__grid">
+                    <!-- DRY Card -->
+                    <div class="blueprint-card">
+                        <div class="blueprint-card__header">
+                            <span class="blueprint-card__emoji">♻️</span>
+                            <h3 class="blueprint-card__title">DRY Principle</h3>
+                        </div>
+                        <div class="blueprint-card__body">
+                            <p><strong>Don't Repeat Yourself.</strong> One component defined once, used everywhere.</p>
+                            <div class="blueprint-card__code-block">
+                                <code>.button { padding: 1rem; border-radius: 4px; }</code>
+                                <code>.button--primary { background: #2563eb; }</code>
+                                <code>.button--secondary { background: #1e293b; }</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BEM Card -->
+                    <div class="blueprint-card">
+                        <div class="blueprint-card__header">
+                            <span class="blueprint-card__emoji">🧩</span>
+                            <h3 class="blueprint-card__title">BEM Methodology</h3>
+                        </div>
+                        <div class="blueprint-card__body">
+                            <p><strong>Block &bull; Element &bull; Modifier</strong></p>
+                            <div class="blueprint-card__code-block">
+                                <code>.card { }</code>
+                                <code>.card__header { }</code>
+                                <code>.card--featured { }</code>
+                            </div>
+                            <p class="blueprint-card__note">Fractal scale: modular, scalable, maintainable.</p>
+                        </div>
+                    </div>
+
+                    <!-- Grid + Flexbox Card -->
+                    <div class="blueprint-card blueprint-card--full">
+                        <div class="blueprint-card__header">
+                            <span class="blueprint-card__emoji">📐</span>
+                            <h3 class="blueprint-card__title">Layout Systems: The Right Tool</h3>
+                        </div>
+                        <div class="blueprint-card__body blueprint-card__body--row">
+                            <div class="blueprint-card__col">
+                                <h4>CSS Grid</h4>
+                                <p>Page structure — macro layout.</p>
+                                <code class="blueprint-card__inline-code">display: grid;</code>
+                            </div>
+                            <div class="blueprint-card__divider"></div>
+                            <div class="blueprint-card__col">
+                                <h4>Flexbox</h4>
+                                <p>Component alignment — micro layout.</p>
+                                <code class="blueprint-card__inline-code">display: flex;</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IPO MODEL -->
+        <section class="ipo" aria-label="IPO Model">
+            <div class="ipo__inner container">
+                <div class="ipo__grid">
+                    <div class="ipo__stage ipo__stage--input">
+                        <span class="ipo__number">01</span>
+                        <h3 class="ipo__title">Input</h3>
+                        <p class="ipo__desc">Images &bull; Icons &bull; Text</p>
+                    </div>
+                    <div class="ipo__arrow">→</div>
+                    <div class="ipo__stage ipo__stage--process">
+                        <span class="ipo__number">02</span>
+                        <h3 class="ipo__title">Process</h3>
+                        <p class="ipo__desc">Box Model &bull; CSS Logic</p>
+                    </div>
+                    <div class="ipo__arrow">→</div>
+                    <div class="ipo__stage ipo__stage--output">
+                        <span class="ipo__number">03</span>
+                        <h3 class="ipo__title">Output</h3>
+                        <p class="ipo__desc">Pixel-Perfect Render</p>
+                    </div>
+                </div>
+                <p class="ipo__debug">
+                    <strong>Debug:</strong> Isolate the stage — Corrupted Input? Logical Error? Rendering Failure?
+                </p>
+            </div>
+        </section>
+
+        <!-- A11Y / ACCESSIBILITY -->
+        <section class="accessibility" aria-label="Accessibility Standards">
+            <div class="accessibility__inner container">
+                <div class="accessibility__content">
+                    <span class="accessibility__tag">A11Y</span>
+                    <h2 class="accessibility__title">Accessibility <span class="accessibility__highlight">Standards</span></h2>
+                    <p class="accessibility__desc">
+                        Non-negotiable. The web must be perceivable by <strong>all users</strong> 
+                        and <strong>assistive technologies</strong>.
+                    </p>
+                    <ul class="accessibility__list">
+                        <li>✓ Semantic HTML for screen readers</li>
+                        <li>✓ ARIA labels where needed</li>
+                        <li>✓ Sufficient color contrast</li>
+                        <li>✓ Keyboard navigable</li>
+                    </ul>
+                </div>
+                <div class="accessibility__icon">♿</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="footer__inner container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <span class="footer__brand-name">Decode<span class="footer__brand-highlight">Labs</span></span>
+                    <p class="footer__brand-tag">Engineering Foundations</p>
+                </div>
+                <div class="footer__contact">
+                    <a href="tel:+918933006408" class="footer__contact-link">
+                        📞 +91 89330 06408
+                    </a>
+                    <a href="mailto:decodelabs.tech@gmail.com" class="footer__contact-link">
+                        ✉️ decodelabs.tech@gmail.com
+                    </a>
+                    <a href="https://www.decodelabs.tech" class="footer__contact-link" target="_blank" rel="noopener">
+                        🌐 www.decodelabs.tech
+                    </a>
+                </div>
+                <div class="footer__location">
+                    <span>Lahore,Pakistan</span>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2026 DecodeLabs. All rights reserved.
+                </p>
+                <p class="footer__mandate">
+                    “Build it well, for the frontend is the only part of the system the world will ever see.”
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
